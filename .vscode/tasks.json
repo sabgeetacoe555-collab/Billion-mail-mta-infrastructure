@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Deploy to RunPod",
+			"type": "shell",
+			"command": "ssh root@103.27.233.182 -p 11292 -i ~/.ssh/id_ed25519 \"cd ~/Billion-mail-mta-infrastructure && git pull && docker compose up -d --build && chmod +x generate_dkim_keys.sh create_user.sh && ./generate_dkim_keys.sh && ./create_user.sh admin@myissuesinc.com StrongAdmin!23\"",
+			"group": { "kind": "build", "isDefault": true },
+			"problemMatcher": []
+		}
+	]
+}

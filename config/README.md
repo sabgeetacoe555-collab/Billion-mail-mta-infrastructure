@@ -69,3 +69,34 @@ Connect directly to exposed ports:
 
 - `103.27.233.182:11292`
 - `103.27.233.182:22`
+
+---
+## Pods
+
+### Myissues-mta-server
+
+**ID:** 
+
+### Connect Details
+
+**SSH (no SCP/SFTP)**
+```powershell
+ssh qlgr4lgnahxnep-64411b24@ssh.runpod.io -i ~/.ssh/id_ed25519
+```
+
+**SSH over TCP (supports SCP & SFTP)**
+```powershell
+ssh root@103.27.233.182 -p 11292 -i ~/.ssh/id_ed25519
+```
+
+### Web Terminal
+
+Connect to your pod using a terminal directly in your browser:
+
+- **Enable Web Terminal**: Port 19123
+- **Open Web Terminal**: Available in RunPod UI
+
+### Direct TCP Ports
+
+- `103.27.233.182:11292`
+- `103.27.233.182:22`
